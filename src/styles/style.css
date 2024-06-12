@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.loading {
+    position: sticky;
+    top: 0;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 0px 16px 0px;
+    justify-content:space-around;
+    position: fixed;
+    background-color: #80B9AD;
+}
+
+nav h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+nav p {
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+nav button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #538392;
+    color: white;
+}
+
+nav button:hover {
+    background-color: #416874;
+    cursor: pointer;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: #80B9AD;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    padding: 16px;
+}
+
+.main {
+    padding-top: 70px;
+}
+
+.main-auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.title-auth {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.content-auth {
+    background-color: #80B9AD;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    padding: 16px;
+    width: 450px;
+}
+
+.wrap-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.btn {
+    margin: 16px 0;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    background-color: #538392;
+    color: white;
+}
+
+.btn-add {
+    position: fixed;
+    bottom: 40px;
+    right: 45px;
+    color: #538392;
+}
+
+.btn:hover {
+    background-color: #416874;
+cursor: pointer;
+}
+
+.btn-add:hover {
+    color: #416874;
+    cursor: pointer;
+}
+
+.wrap-input label {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.wrap-input input, textarea {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #B3E2A7;
+}
+
+.main-page {
+    padding: 20px 0;
+    margin: auto;
+    width: 1200px;
+    color: black;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-page {
+        width: 90vw;
+    }
+}
+
+.main-page h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.card-thread {
+    background-color: #6295A2;
+    margin-bottom: 16px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.card-thread-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.child-desc {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.category {
+    background-color: #80B9AD;
+    width: max-content;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: black;
+}
+
+.threads-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.child-desc-detail {
+    margin: 18px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.child-desc-detail img {
+    width: 25px;
+    border-radius: 50%;
+    margin: 0 7px;
+}
+
+.title-add-comment {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input-content-comment {
+    width: 98%;
+}
+
+.card-comment {
+    background-color: #6295A2;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.card-comment-content {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.desc-card-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc-card-comment div {
+    display: flex;
+    align-items: center;
+}
+
+.desc-card-comment div p {
+    font-weight: 500;
+}
+
+.desc-card-comment img {
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
