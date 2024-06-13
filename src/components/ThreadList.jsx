@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ThreadItem, { threadItemShape } from './ThreadItem';
 
-function ThreadsList({ threads }) {
+function ThreadList({ threads }) {
   return (
     <div className='threads-list'>
       {threads.map((thread) => (
@@ -12,8 +12,8 @@ function ThreadsList({ threads }) {
   );
 }
 
-ThreadsList.propTypes = {
+ThreadList.propTypes = {
   threads: PropTypes.arrayOf(PropTypes.shape(threadItemShape)).isRequired
 };
 
-export default ThreadsList;
+export default ThreadList;

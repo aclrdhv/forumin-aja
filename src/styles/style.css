@@ -6,13 +6,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.loading {
-    position: sticky;
-    top: 0;
-}
-
 body {
-    background-color: white;
+    background-color: #B3E2A7;
 }
 
 nav {
@@ -54,24 +49,8 @@ nav div {
     align-items: center;
 }
 
-.wrapper {
-    background-color: #80B9AD;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 7px;
-    padding: 16px;
-}
-
 .main {
     padding-top: 70px;
-}
-
-.main-auth {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: white;
 }
 
 .title-auth {
@@ -85,6 +64,16 @@ nav div {
     border-radius: 7px;
     padding: 16px;
     width: 450px;
+}
+
+.content-auth a {
+    color: #416874;
+    text-decoration: none;
+}
+
+.content-auth a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .wrap-input {
@@ -133,26 +122,6 @@ cursor: pointer;
     background-color: #B3E2A7;
 }
 
-.main-page {
-    padding: 20px 0;
-    margin: auto;
-    width: 1200px;
-    color: black;
-}
-
-@media screen and (max-width: 1440px) {
-    .main-page {
-        width: 90vw;
-    }
-}
-
-.main-page h1 {
-    font-size: 34px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: black;
-}
-
 .card-thread {
     background-color: #6295A2;
     margin-bottom: 16px;
@@ -169,16 +138,6 @@ cursor: pointer;
 .child-desc {
     margin-top: 10px;
     font-weight: 300;
-}
-
-.category {
-    background-color: #80B9AD;
-    width: max-content;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-top: 10px;
-    color: black;
 }
 
 .threads-list a {
@@ -211,14 +170,6 @@ cursor: pointer;
     width: 98%;
 }
 
-.card-comment {
-    background-color: #6295A2;
-    border-radius: 7px;
-    padding: 10px;
-    margin-bottom: 18px;
-    color: white;
-}
-
 .card-comment-content {
     margin-top: 10px;
     font-weight: 300;
@@ -243,4 +194,10 @@ cursor: pointer;
     width: 24px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-add {
+        color: #80B9AD;
+    }
 }

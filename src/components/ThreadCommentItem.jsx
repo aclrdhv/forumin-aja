@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { postedAt } from '../utils';
+import CardComment from './styled/CardComment';
 
 function ThreadCommentItem({ content, createdAt, owner }) {
   return (
-    <div className='card-comment'>
+    <CardComment>
       <div className='desc-card-comment'>
         <div>
           <img src={owner.avatar} alt='' />
@@ -13,7 +14,7 @@ function ThreadCommentItem({ content, createdAt, owner }) {
         <p>{postedAt(createdAt)}</p>
       </div>
       <p dangerouslySetInnerHTML={{ __html: content }} className='card-comment-content' />
-    </div>
+    </CardComment>
   );
 }
 

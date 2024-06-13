@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import LoginInput from '../components/LoginInput';
 import { asyncSetAuthUser } from '../states/authUser/action';
+import AuthPage from '../components/styled/AuthPage';
 
 function LoginPage() {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ function LoginPage() {
   };
 
   return (
-    <div className='main-auth'>
+    <AuthPage>
       <h2 className='title-auth'>Login to ForuminAJA</h2>
       <div className='content-auth'>
         <LoginInput login={onLogin} />
@@ -19,7 +20,7 @@ function LoginPage() {
           Dont have an account? <Link to='/register'>Register</Link>
         </p>
       </div>
-    </div>
+    </AuthPage>
   );
 }
 

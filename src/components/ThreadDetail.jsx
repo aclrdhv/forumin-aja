@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { postedAt } from '../utils';
+import Category from './styled/Category';
 
 function ThreadDetail({ title, body, createdAt, owner, category }) {
   return (
     <div>
       <h1>{title}</h1>
-      <p className='category'>#{category}</p>
+      <Category>#{category}</Category>
       <p className='child-desc-detail'>
         Made by <img src={owner.avatar} alt='' /> {owner.name} - {postedAt(createdAt)}{' '}
       </p>
