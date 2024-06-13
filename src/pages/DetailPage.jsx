@@ -5,6 +5,7 @@ import { asyncReceiveThreadDetail, asyncAddThreadComment } from '../states/threa
 import ThreadDetail from '../components/ThreadDetail';
 import ThreadCommentInput from '../components/ThreadCommentInput';
 import ThreadCommentList from '../components/ThreadCommentList';
+import MainPage from '../components/styled/MainPage';
 
 function DetailPage() {
   const { id } = useParams();
@@ -24,11 +25,11 @@ function DetailPage() {
   }
 
   return (
-    <div className='main-page'>
+    <MainPage>
       <ThreadDetail {...threadDetail} />
       <ThreadCommentInput addCommentThread={onAddCommentThread} />
       <ThreadCommentList comments={threadDetail.comments} />
-    </div>
+    </MainPage>
   );
 }
 

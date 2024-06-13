@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { BsFillPlusCircleFill } from 'react-icons/bs';
-import ThreadsList from '../components/ThreadList';
+import ThreadList from '../components/ThreadList';
 import { asyncPopulateUsersAndThreads } from '../states/shared/action';
+import MainPage from '../components/styled/MainPage';
+import HeadingMainPage from '../components/styled/HeadingMainPage';
 
 function HomePage() {
   const { threads = [], users = [], authUser } = useSelector((states) => states);
@@ -20,13 +22,13 @@ function HomePage() {
   }));
 
   return (
-    <div className='main-page'>
-      <h1>Forum Tersedia</h1>
-      <ThreadsList threads={threadList} />
+    <MainPage>
+      <HeadingMainPage>Forum Tersedia</HeadingMainPage>
+      <ThreadList threads={threadList} />
       <Link to='/new' className='btn-add'>
         <BsFillPlusCircleFill size={60} />
       </Link>
-    </div>
+    </MainPage>
   );
 }
 

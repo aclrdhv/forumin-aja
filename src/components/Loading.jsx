@@ -1,11 +1,12 @@
 import React from 'react';
 import LoadingBar from 'react-redux-loading-bar';
+import LoadingStyle from './styled/LoadingStyle';
 
 function Loading() {
   return (
-    <div className='loading'>
+    <LoadingStyle>
       <LoadingBar />
-    </div>
+    </LoadingStyle>
   );
 }
 
